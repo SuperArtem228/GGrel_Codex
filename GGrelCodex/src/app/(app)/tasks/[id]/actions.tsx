@@ -88,7 +88,7 @@ export function TaskActions({
 
       {iAmAssignee && status === "ACCEPTED" && (
         <div className="grid grid-cols-2 gap-2">
-          <Button variant="ink" onClick={() => run(() => startTaskAction(taskId))} loading={pending}>
+          <Button variant="primary" onClick={() => run(() => startTaskAction(taskId))} loading={pending}>
             Начать
           </Button>
           <Button variant="accent" onClick={() => run(() => completeTaskAction(taskId))} loading={pending}>
